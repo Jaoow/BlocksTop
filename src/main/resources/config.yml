@@ -1,0 +1,50 @@
+#Database Settings
+connection:
+  mysql:
+    enable: false
+    address: "localhost:3306"
+    username: "root"
+    password: "pa$$w0rd"
+    database: "minecraft"
+  sqlite:
+    file: "plugins/BlocksTop/data.sql"
+
+
+inventories:
+  categories:
+    title: "Categories:"
+    size: 3
+    items:
+      all:
+        slot: 12
+        material: "STONE"
+        name: "&eTop Miners - All"
+        lore:
+          - "&7&oClick here to open."
+      ores:
+        slot: 14
+        material: "IRON_ORE"
+        name: "&eTop Miners - Ores"
+        lore:
+          - "&7&oClick here to open."
+
+  all:
+    title: "Top Miners - All"
+    size: 6
+    baseItem:
+      name: "&e%name% &6%position%º"
+      lore:
+        - ''
+        - '&7This player has broken'
+        - '&7a total of %value% blocks'
+        - ''
+  ores:
+    title: "Top Miners - Ores"
+    size: 6
+    baseItem:
+      name: "&e%name% &6%position%º"
+      lore:
+        - ''
+        - '&7This player has broken'
+        - '&7a total of %value% ores'
+        - ''

@@ -1,0 +1,8 @@
+name: BlocksTop
+version: '${project.version}'
+api-version: 1.13
+main: com.jaoow.blockstop.BlocksTop
+authors: [ Jaoow ]
+commands:
+  blockstop:
+    description: Open blocks top menu
